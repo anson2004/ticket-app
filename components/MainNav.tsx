@@ -10,7 +10,7 @@ async function MainNav() {
   console.log(session)
   return (
     <div className="flex justify-between items-center p-4">
-      <MainNavLinks />
+      <MainNavLinks role={session?.user.role}/>
 
 
       <div className="flex  items-center gap-2">
